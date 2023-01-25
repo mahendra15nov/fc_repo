@@ -3,3 +3,4 @@ public class Test {
     int l = 1;
 
 }
+return something
