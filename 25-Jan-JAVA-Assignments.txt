@@ -8,6 +8,7 @@ CHANGE1
   
 Verify that if given string is a palindrome
     eg: yyyhhhyyy - palindrome
+
         yyhyyy  - not a palindrome
 CHANGE2
         
