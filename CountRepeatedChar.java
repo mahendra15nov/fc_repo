@@ -18,9 +18,7 @@ public class CountRepeatedChar {
             }
             if (find == 1) {
                 System.out.println(
-                        "Number of Occurrence of "
-                                + str.charAt(i)
-                                + " is:" + count[str.charAt(i)]);
+                        "Number of Occurrence of "+ str.charAt(i)+ " is:" + count[str.charAt(i)]);
             }
         }
     }
