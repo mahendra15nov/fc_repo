@@ -17,3 +17,5 @@ Couunt the repeated charasteres in statement, ignore the spaces at begining and 
      ll - 4
      o- 2
      Space - 1
+
+Results
