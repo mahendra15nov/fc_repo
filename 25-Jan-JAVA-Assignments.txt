@@ -18,5 +18,3 @@ Count the repeated characters in statement, ignore the spaces at beginning and e
      o- 2
      Space - 1
 
-Results
-Results Praneeth
