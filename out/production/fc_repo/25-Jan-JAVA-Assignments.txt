@@ -3,12 +3,14 @@ Identify the repeated digits in positive integer
   1. Digit - Count
   2. Negative - It's a negative integer
   3. Zero - It's a zero
-  
+
+CHANGE1
   
 Verify that if given string is a palindrome
     eg: yyyhhhyyy - palindrome
+
         yyhyyy  - not a palindrome
-        
+CHANGE2
         
 Count the repeated characters in statement, ignore the spaces at beginning and end of a statement
   eg: Hello Hello 
@@ -17,3 +19,7 @@ Count the repeated characters in statement, ignore the spaces at beginning and e
      l - 4
      o- 2
      Space - 1
+
+Results
+Results Praneeth
+
