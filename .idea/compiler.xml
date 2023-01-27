@@ -9,5 +9,8 @@
         <module name="FC_FL_Batch1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Github_FC_repo" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
