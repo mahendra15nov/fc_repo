@@ -23,3 +23,18 @@ Count the repeated characters in statement, ignore the spaces at beginning and e
 Results
 Results Praneeth
 
+
+Assignments
+
+1. Create a file if does not exists, overrite the content if it is exists.
+2. Delete a file, Delete Folder
+3. Append the content to the file 
+4. Replace partial content inside file 
+
+Excel Opration 
+1. Create a Excel file and create a sheet 
+2. Create new sheet in existing excel file 
+3. Write content inside excel file 
+4. Appedend the content at last rows 
+5. Replace the content in existing file 
+
