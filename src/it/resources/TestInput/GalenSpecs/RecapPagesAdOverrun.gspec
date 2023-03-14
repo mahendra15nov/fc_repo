@@ -1,0 +1,17 @@
+# ==================== User Story ===========================
+
+#PPE-205764 - ReCAP - bottom ad overlapping content
+
+#=========================================================
+
+@objects
+
+# ReCAP Pages
+	
+	141Container			//*[@id="ads-pos-141"]
+	AdContainerRightColumn		//*[@id="adcontainer_column-right"]
+	
+= Galen Specifications = 
+
+		AdContainerRightColumn:
+			above 141Container

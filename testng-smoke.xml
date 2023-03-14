@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="com.webmd.general.common.Listener"></listener>
+
+	</listeners>
+	<test name="TestDesktop">
+		<parameter name="breakPoint" value="4" />
+		<groups>
+			<run>
+				<include name="AdsSmoke" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.webmd.ads.smoke" />
+		</packages>
+
+	</test>
+	<test name="TestMobile">
+		<parameter name="breakPoint" value="1" />
+		<groups>
+			<run>
+				<include name="AdsSmoke" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.webmd.ads.smoke" />
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

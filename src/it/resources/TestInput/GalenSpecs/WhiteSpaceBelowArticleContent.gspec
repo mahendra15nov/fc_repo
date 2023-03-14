@@ -1,0 +1,17 @@
+# ==================== User Story ===========================
+
+#PPE-164230 - N&P: reduce extra white space above what to read next footer
+
+#=========================================================
+
+@objects
+
+# Drug Monograph Pages
+	
+	ArticleContentWraper			//div[@class='article-content-wrapper']
+	RelatedLinksContainer		//div[@id='rel-links-container']/div
+	
+= Galen Specifications = 
+	@on 1280x700
+		RelatedLinksContainer:
+			below ArticleContentWraper 0 to 25 px

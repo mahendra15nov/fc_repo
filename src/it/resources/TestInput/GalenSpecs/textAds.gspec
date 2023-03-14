@@ -1,0 +1,24 @@
+# ==================== User Story ===========================
+
+#PPE-213083 - Pos 520 not expanding around Text Driver
+
+#=========================================================
+
+@objects
+
+#FFQ Pages
+	
+	textAds520Div			//*[@id='ads-pos-520']/parent::div
+	textAds520Div_top_pTag		//*[@id='ads-pos-520']/parent::div/preceding-sibling::p
+	textAds520Div_bottom_pTag		//*[@id='ads-pos-520']/parent::div/following-sibling::p
+	
+= Galen Specifications = 
+	@on 1280x700
+		textAds520Div:
+			css max-width is "750px"
+			below textAds520Div_top_pTag 50 to 100px
+			above textAds520Div_bottom_pTag 10 to 50px
+		textAds520Div_top_pTag:
+		    above textAds520Div_bottom_pTag 200 to 500px
+		textAds520Div_bottom_pTag:
+		    below textAds520Div_top_pTag 200 to 500px

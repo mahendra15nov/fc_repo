@@ -1,0 +1,11 @@
+/target/
+src/it/resources/Reports/
+test-output/
+.settings/
+Reports/
+src/it/resources/TestOutput/
+adsIntegrationTest.iml
+.idea/
+testng.out.xml
+Profiles/staging-config.properties
+src/it/resources/Dump/

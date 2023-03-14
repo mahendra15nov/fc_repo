@@ -1,0 +1,116 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.webmd.ads</groupId>
+	<artifactId>adsIntegrationTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<build>
+		<sourceDirectory>src/it/java</sourceDirectory>
+
+		<resources>
+			<resource>
+				<directory>src</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<fork>true</fork>
+					<encoding>cp1252</encoding>
+					<!-- <executable>C:\Program Files (x86)\Java\jdk1.8.0_92\bin\javac.exe</executable> -->
+				</configuration>
+			</plugin>
+
+
+
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
+				<version>2.19.1</version> <configuration> <properties> <property> <name>groups</name> 
+				<value>${groups}</value> </property> </properties> <suiteXmlFiles> <suiteXmlFile>${xml}</suiteXmlFile> 
+				</suiteXmlFiles> </configuration> </plugin> -->
+
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<properties>
+						<property>
+							<name>groups</name>
+							<value>${groups}</value>
+						</property>
+
+						<property>
+							<name>suitethreadpoolsize</name>
+							<value>5</value>
+						</property>
+
+					</properties>
+
+					<suiteXmlFiles>
+
+						<suiteXmlFile>testng_regression.xml</suiteXmlFile>
+					</suiteXmlFiles>
+
+					<systemPropertyVariables>
+						<environment>${hubHost}</environment>
+					</systemPropertyVariables>
+
+					<systemPropertyVariables>
+						<environment>${hubPort}</environment>
+					</systemPropertyVariables>
+
+					<systemPropertyVariables>
+						<environment>${useGrid}</environment>
+					</systemPropertyVariables>
+
+					<systemPropertyVariables>
+						<environment>${OS}</environment>
+					</systemPropertyVariables>
+
+					<systemPropertyVariables>
+						<environment>${jenkinsJobName}</environment>
+					</systemPropertyVariables>
+
+					<systemPropertyVariables>
+						<environment>${jenkinsExecution}</environment>
+					</systemPropertyVariables>
+
+					<systemPropertyVariables>
+						<environment>${env}</environment>
+					</systemPropertyVariables>
+
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.5</version>
+			</plugin>
+
+
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.webmd</groupId>
+			<artifactId>professional-automation-base</artifactId>
+			<version>1.7.4.1</version>
+		</dependency>
+	</dependencies>
+
+</project>
